@@ -28,8 +28,8 @@ function start() {
 
     rl.question("What would you like to search for? ", function(query) {
 
-        searchImage(query);
-        rl.close();
+      searchImage(query);
+      rl.close();
 
     });
     
@@ -38,7 +38,7 @@ function start() {
 
 function searchImage(query) {
 
-    var url = "http://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + (query.replace(/\s/g, '+'));
+    var url = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + (query.replace(/\s/g, '+'));
 
     request({
 
